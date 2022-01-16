@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z9gYQ8RULiMKP7nWEimyIfhRA1ULUhC9RtgR9LBU/goz4lDXqNj8FmK2/oF4KIYz9LbudutduwJcrdtmWcyHrw==",
+  "dgSpecHash": "ImsqgEjWHWZniTQ9MRIdatY+Kj95qPjPGgxVkUwTUQNMLBIvwzVSb/JV0ytE/g4W88vPrYE9VsbjP8CC2qk5ag==",
   "success": true,
-  "projectFilePath": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+  "projectFilePath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
   "expectedPackageFiles": [
     "/Users/victor/.nuget/packages/automatonymous/5.1.1/automatonymous.5.1.1.nupkg.sha512",
     "/Users/victor/.nuget/packages/dnsclient/1.3.1/dnsclient.1.3.1.nupkg.sha512",

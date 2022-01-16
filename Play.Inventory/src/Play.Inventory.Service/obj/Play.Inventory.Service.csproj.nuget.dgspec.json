@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {}
+    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {}
   },
   "projects": {
-    "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {
+    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
+        "projectUniqueName": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
         "projectName": "Play.Inventory.Service",
-        "projectPath": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
+        "projectPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Inventory/src/Play.Inventory.Service/Play.Inventory.Service.csproj",
         "packagesPath": "/Users/victor/.nuget/packages/",
-        "outputPath": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Inventory/src/Play.Inventory.Service/obj/",
+        "outputPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Inventory/src/Play.Inventory.Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/victor/.nuget/NuGet/NuGet.Config"

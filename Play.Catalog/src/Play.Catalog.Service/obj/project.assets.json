@@ -5933,11 +5933,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+      "projectUniqueName": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
       "projectName": "Play.Catalog.Service",
-      "projectPath": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+      "projectPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
       "packagesPath": "/Users/victor/.nuget/packages/",
-      "outputPath": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Catalog/src/Play.Catalog.Service/obj/",
+      "outputPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/victor/.nuget/NuGet/NuGet.Config"
