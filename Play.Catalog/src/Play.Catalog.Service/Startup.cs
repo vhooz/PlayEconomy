@@ -1,3 +1,5 @@
+using MassTransit;
+using MassTransit.Definition;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,6 +28,19 @@ namespace Play.Catalog.Service
             serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
 
             services.AddMongo().AddMongoRepository<Item>("items");
+
+            services.AddMassTransit(x =>
+           {
+               x.UsingRabbitMq((context, configurator) =>
+               {
+                   var rabbitMQSettings = Configuration.GetSection(nameof(RabbitMQSettings)).Get<RabbitMQSettings>();
+                   configurator.Host(rabbitMQSettings.Host);
+                   configurator.ConfigureEndpoints(context, new KebabCaseEndpointNameFormatter(serviceSettings.ServiceName, false));
+               });
+           });
+
+            //Start the mass transit hosting service: it will start the rabbitMQ bus
+            services.AddMassTransitHostedService();
 
             services.AddControllers(options =>
             {
