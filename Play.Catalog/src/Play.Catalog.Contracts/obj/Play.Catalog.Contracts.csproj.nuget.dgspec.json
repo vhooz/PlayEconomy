@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj": {}
+    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/play.Catalog.Contracts/Play.Catalog.Contracts.csproj": {}
   },
   "projects": {
-    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj": {
+    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/play.Catalog.Contracts/Play.Catalog.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj",
+        "projectUniqueName": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/play.Catalog.Contracts/Play.Catalog.Contracts.csproj",
         "projectName": "Play.Catalog.Contracts",
-        "projectPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Contracts/Play.Catalog.Contracts.csproj",
+        "projectPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/play.Catalog.Contracts/Play.Catalog.Contracts.csproj",
         "packagesPath": "/Users/victor/.nuget/packages/",
-        "outputPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Contracts/obj/",
+        "outputPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/play.Catalog.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/victor/.nuget/NuGet/NuGet.Config"

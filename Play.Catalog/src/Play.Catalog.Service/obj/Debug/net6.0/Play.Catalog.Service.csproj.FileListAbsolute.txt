@@ -94,3 +94,6 @@
 /Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/obj/Debug/net6.0/ref/Play.Catalog.Service.dll
 /Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/obj/Debug/net6.0/Play.Catalog.Service.pdb
 /Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/obj/Debug/net6.0/Play.Catalog.Service.genruntimeconfig.cache
+/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net6.0/nuget.config
+/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net6.0/Play.Catalog.Contracts.dll
+/Users/victor/Projects/dotnet-microservices-test-01/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net6.0/Play.Catalog.Contracts.pdb

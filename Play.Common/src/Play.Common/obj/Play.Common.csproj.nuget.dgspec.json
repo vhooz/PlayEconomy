@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Common/src/Play.Common/Play.Common.csproj": {}
+    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Common/src/Play.Common/Play.Common.csproj": {}
   },
   "projects": {
-    "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Common/src/Play.Common/Play.Common.csproj": {
+    "/Users/victor/Projects/dotnet-microservices-test-01/Play.Common/src/Play.Common/Play.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Common/src/Play.Common/Play.Common.csproj",
+        "projectUniqueName": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Common/src/Play.Common/Play.Common.csproj",
         "projectName": "Play.Common",
-        "projectPath": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Common/src/Play.Common/Play.Common.csproj",
+        "projectPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Common/src/Play.Common/Play.Common.csproj",
         "packagesPath": "/Users/victor/.nuget/packages/",
-        "outputPath": "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/Play.Common/src/Play.Common/obj/",
+        "outputPath": "/Users/victor/Projects/dotnet-microservices-test-01/Play.Common/src/Play.Common/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/victor/.nuget/NuGet/NuGet.Config"
@@ -20,6 +20,7 @@
           "net6.0"
         ],
         "sources": {
+          "/Users/victor/Projects/NET Microservices by Julio Casal/GameTrader/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +39,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MassTransit.AspNetCore": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[6.0.0, )"
