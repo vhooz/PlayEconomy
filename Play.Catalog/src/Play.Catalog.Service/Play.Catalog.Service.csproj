@@ -6,10 +6,8 @@
     <ImplicitUsings>disable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    
-    <PackageReference Include="Play.Common" Version="1.0.1" />
-    
+  <ItemGroup>    
+    <PackageReference Include="Play.Common" Version="1.0.0" />    
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.5" />
   </ItemGroup>
 
