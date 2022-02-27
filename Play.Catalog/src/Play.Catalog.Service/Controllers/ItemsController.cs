@@ -3,6 +3,7 @@ using System.Collections.Generic; //why in here is unnecesary but in the video e
 using System.Linq;
 using System.Threading.Tasks;
 using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Play.Catalog.Contracts;
 using Play.Catalog.Service.Dtos;
@@ -13,6 +14,7 @@ namespace Play.Catalog.Service.Controllers
 {
     [ApiController]
     [Route("items")] //https://localhost:5001/items
+    [Authorize]
     public class ItemsController : ControllerBase
     {
 
