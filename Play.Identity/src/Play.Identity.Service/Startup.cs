@@ -35,9 +35,8 @@ namespace Play.Identity.Service
             BsonSerializer.RegisterSerializer(new GuidSerializer(BsonType.String));
             var serviceSettings = Configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
             var mongoDbSettings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
-            IdentityServerSettings identityServerSettings = new();
+            var identityServerSettings = Configuration.GetSection(nameof(IdentityServerSettings)).Get<IdentityServerSettings>();
 
-            /*Configure AspNetCore Identity and connect it to the mongoDB.*/
             services.AddDefaultIdentity<ApplicationUser>()
                 .AddRoles<ApplicationRole>()
                 .AddMongoDbStores<ApplicationUser, ApplicationRole, Guid>
@@ -46,13 +45,16 @@ namespace Play.Identity.Service
                     serviceSettings.ServiceName
                 );
 
-            services.AddIdentityServer()
+            services.AddIdentityServer(options => {
+                    options.Events.RaiseSuccessEvents = true;
+                    options.Events.RaiseFailureEvents = true;
+                    options.Events.RaiseErrorEvents = true;
+                })
                 .AddAspNetIdentity<ApplicationUser>()
                 .AddInMemoryApiScopes(identityServerSettings.ApiScopes)
                 .AddInMemoryClients(identityServerSettings.Clients)
                 .AddInMemoryIdentityResources(identityServerSettings.IdentityResources)
-                .AddDeveloperSigningCredential();//on production you need to use a certificate.
-
+                .AddDeveloperSigningCredential();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -69,23 +71,21 @@ namespace Play.Identity.Service
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Play.Identity.Service v1"));
-
             }
 
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles(); //what is this for?
+            app.UseStaticFiles();
 
             app.UseRouting();
 
             app.UseIdentityServer();
-
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapRazorPages(); //https://localhost:5003/Identity/Account/Register
+                endpoints.MapRazorPages();
             });
         }
     }
